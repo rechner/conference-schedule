@@ -13,6 +13,13 @@ const About = ({classes}) => (
       Alternative Conference Schedule
     </Typography>
     <Typography variant="body1" gutterBottom className={classes.text}>
+      <em>[ Adaptations by Rechner (
+      <Link href="https://twitter.com/rechnerfox" target="_blank">
+        @rechnerfox
+      </Link>
+      ) ]</em>
+    </Typography>
+    <Typography variant="body1" gutterBottom className={classes.text}>
       Hi, I&apos;m Josh Gretz (
       <Link href="https://twitter.com/joshgretz" target="_blank">
         @joshgretz

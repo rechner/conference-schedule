@@ -1,4 +1,5 @@
 import React from 'react';
+import moment from 'moment';
 import {compose} from '@truefit/bach';
 import {withSelector} from '@truefit/bach-redux';
 
@@ -24,6 +25,15 @@ const SessionDetail = ({speakers, room, tags, session}) => (
     <Typography variant="subtitle2">
       <span className="bold">Tags: </span>
       {tags.map(c => c.name).join(', ')}
+    </Typography>
+    <Typography variant="subtitle2">
+
+      <span className="bold">{(moment() - moment(session.startTime) >= 0) ? 'Started' : 'Starts'}: </span>
+      {moment(session.startTime).format('LT')} ({moment(session.startTime).fromNow()})
+    </Typography>
+    <Typography variant="subtitle2">
+      <span className="bold">{(moment() - moment(session.endTime) >= 0) ? 'Ended' : 'Ends'}: </span>
+      {moment(session.endTime).format('LT')} ({moment(session.endTime).fromNow()})
     </Typography>
     <Divider />
     <Typography

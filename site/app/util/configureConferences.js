@@ -1,18 +1,8 @@
 import moment from 'moment';
-import configureCodeMash from '../features/conferences/codemash/util';
-import configureCodestock from '../features/conferences/codestock/util';
-import configureStirTrek from '../features/conferences/stirtrek/util';
-import configureThatConference from '../features/conferences/thatconference/util';
-import configureAbstractions from '../features/conferences/abstractions/util';
-import configureStrangeLoop from '../features/conferences/strangeloop/util';
+import configureFurrydelphia from '../features/conferences/furrydelphia/util';
 
 const configurations = [
-  configureCodeMash,
-  configureCodestock,
-  configureStirTrek,
-  configureThatConference,
-  configureAbstractions,
-  configureStrangeLoop,
+  configureFurrydelphia,
 ];
 
 export const CONFERENCES = [];

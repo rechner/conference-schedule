@@ -18,7 +18,7 @@ const Icon = ({handleClick}) => (
     <ListItemIcon>
       <ExploreIcon />
     </ListItemIcon>
-    <ListItemText primary="Change Conference" />
+    <ListItemText primary="Select Convention" />
   </ListItem>
 );
 

@@ -42,9 +42,6 @@ const SelectionContent = ({classes, mode, setMode, speakers}) => (
     <SelectionButton value={MODE.DETAIL} mode={mode} setMode={setMode}>
       Detail
     </SelectionButton>
-    <SelectionButton value={MODE.SPEAKERS} mode={mode} setMode={setMode}>
-      Speaker{speakers.length <= 1 ? '' : 's'}
-    </SelectionButton>
   </div>
 );
 

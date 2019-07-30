@@ -28,14 +28,14 @@ const ConferenceModal = ({classes, modals, conferences, handleClose}) => (
     aria-label="conference dialog"
   >
     <Typography variant="h5" className={classes.title}>
-      Conferences
+      Conventions
     </Typography>
 
     <ConferenceList conferences={conferences.present} />
 
     <Divider />
     <Typography variant="h5" className={classes.title}>
-      Past Conferences
+      Past Conventions
     </Typography>
     <ConferenceList conferences={conferences.past} />
   </Dialog>
